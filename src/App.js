@@ -1,7 +1,8 @@
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
-
-import { Box, Paper, Typography } from '@mui/material'
-import Chat from './components.js/Chat'
+import Chat from './components/Chat'
+import Layout from './components/Layout'
+import NotFound from './components/NotFound'
 
 
 
@@ -9,9 +10,15 @@ function App() {
 
 
   return (
-    <Box sx={{ minHeight: '100vh', width: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center', backgroundColor: 'lightgrey' }}>
-      <Chat />
-    </Box >
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<Layout />}>
+          <Route path='*' element={<NotFound />} />
+          <Route index element={<Chat />} />
+
+        </Route>
+      </Routes>
+    </BrowserRouter>
   )
 }
 
