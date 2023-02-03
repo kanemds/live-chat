@@ -1,8 +1,70 @@
+import { Box, Paper, Typography } from '@mui/material'
 import React from 'react'
+import styled from 'styled-components'
+
+const Lists = styled.div`
+  height: calc(100% - 60px);
+  background-color: #87CEEB;
+  overflow-y:auto;
+  ::-webkit-scrollbar {
+    display: none;
+}
+`
+
 
 const FriendList = () => {
+
   return (
-    <div>FriendList</div>
+    <Box sx={{ width: '100%', height: '60vh', display: 'flex', flexDirection: 'column', overflow: 'hidden' }}>
+      <Box sx={{ height: '60px', backgroundColor: '#4682B4' }}>
+        <Typography>Chat Now</Typography>
+      </Box>
+
+      <Lists >
+        <Typography >name</Typography>
+        <Typography >name</Typography>
+        <Typography >name</Typography>
+        <Typography >name</Typography>
+        <Typography >name</Typography>
+        <Typography >name</Typography>
+        <Typography >name</Typography>
+        <Typography >name</Typography>
+        <Typography >name</Typography>
+        <Typography >name</Typography>
+        <Typography >name</Typography>
+        <Typography >name</Typography>
+        <Typography >name</Typography>
+        <Typography >name</Typography>
+        <Typography >name</Typography>
+        <Typography >name</Typography>
+        <Typography >name</Typography>
+        <Typography >name</Typography>
+        <Typography >name</Typography>
+        <Typography >name</Typography>
+        <Typography >name</Typography>
+        <Typography >name</Typography>
+        <Typography >name</Typography>
+        <Typography >name</Typography>
+        <Typography >name</Typography>
+        <Typography >name</Typography>
+        <Typography >name</Typography>
+        <Typography >name</Typography>
+        <Typography >name</Typography>
+        <Typography >name</Typography>
+        <Typography >name</Typography>
+        <Typography >name</Typography>
+        <Typography >name</Typography>
+        <Typography >name</Typography>
+        <Typography >name</Typography>
+        <Typography >name</Typography>
+        <Typography >name</Typography>
+        <Typography >name</Typography>
+        <Typography >name</Typography>
+        <Typography >name</Typography>
+        <Typography >name</Typography>
+        <Typography >name</Typography>
+      </Lists>
+    </Box>
   )
 }
 
