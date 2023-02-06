@@ -23,7 +23,7 @@ const FriendList = () => {
       </Box>
       <Search />
       <Lists >
-        <Typography >name</Typography>
+
         <Friend />
       </Lists>
     </Box>

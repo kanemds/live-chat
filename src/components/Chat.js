@@ -12,7 +12,7 @@ const Chat = () => {
   return (
     <Paper sx={{ width: '60%', height: '60vh' }}>
       <Grid container sx={{ flexGrow: 1 }} >
-        <Grid xs={4} sm={4} sx={{ maxWidth: '300px' }}>
+        <Grid xs={4} sm={4} sx={{ maxWidth: '330px' }}>
           <FriendList />
         </Grid>
         <Grid xs={8} sm={8} md >

@@ -1,6 +1,7 @@
 import React from 'react'
 import { Box, Typography, Paper } from '@mui/material'
 import styled from 'styled-components'
+import Send from './Send'
 
 const Lists = styled.div`
   height: calc(100% - 60px - 60px);
@@ -50,7 +51,7 @@ const Messages = () => {
         <Typography>Messages</Typography>
       </Lists>
       <Box sx={{ height: '60px', backgroundColor: '#whites' }}>
-        <Typography>Name</Typography>
+        <Send />
       </Box>
     </Box>
   )

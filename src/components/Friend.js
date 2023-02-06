@@ -37,7 +37,7 @@ const StyledBadge = styled(Badge)(({ theme }) => ({
 
 const Friend = () => {
   return (
-    <Stack direction="row" spacing={2} sx={{ maxWidth: '200px', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+    <Stack direction="row" spacing={2} sx={{ display: 'flex', justifyContent: 'flex-start', alignItems: 'center', p: 2 }}>
       <StyledBadge
         overlap="circular"
         anchorOrigin={{ vertical: 'bottom', horizontal: 'right' }}
@@ -47,9 +47,11 @@ const Friend = () => {
       </StyledBadge>
       <Box component="div"
         sx={{
+
+          whiteSpace: 'nowrap',
           textOverflow: 'ellipsis',
           overflow: 'hidden'
-        }}>Ada testing overflow aaaaaaaaaaaaaaaa</Box>
+        }}>Ada testing overflow aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</Box>
     </Stack>
   )
 }
